@@ -1,0 +1,19 @@
+{
+  "name": "grok-build-analysiswiki",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Grok Build 源码分析阅读站",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "docs:build": "node build.js",
+    "docs:check": "node scripts/check-links.mjs",
+    "docs:verify": "npm run docs:build && npm run docs:check",
+    "docs:preview": "npx serve dist"
+  },
+  "dependencies": {
+    "marked": "^12.0.2"
+  }
+}

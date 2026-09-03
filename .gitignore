@@ -1,0 +1,8 @@
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Generated static site files
+docs-site/node_modules/
+docs-site/dist/
